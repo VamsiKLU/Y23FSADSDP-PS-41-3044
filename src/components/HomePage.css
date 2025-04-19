@@ -1,0 +1,106 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 100px; /* Space from Navbar */
+}
+
+/* Flex container for circle images (left) & right-side image */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Left Side - Circle Container */
+.circle-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; /* Space below the circles */
+}
+
+.category-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.category-title {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Start Button */
+.start-button {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  background-color: #107713;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Right Side - Image */
+.right-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-width: 300px;
+  
+}
+
+.right-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* Full-width Bottom Image */
+.bottom-image-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+

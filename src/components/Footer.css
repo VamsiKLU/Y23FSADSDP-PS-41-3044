@@ -1,0 +1,48 @@
+.footer-container {
+  background-color: #f8f9fa; /* Light grey background */
+  color: #333; /* Dark text */
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ddd; /* Subtle separator */
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Social Media Icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-icons a {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Keep original brand colors */
+.facebook {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.youtube {
+  color: #ff0000; /* YouTube Red */
+}
+
+.twitter {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+.instagram {
+  color: #e1306c; /* Instagram Pink */
+}
+
+/* Hover Effect */
+.footer-icons a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}

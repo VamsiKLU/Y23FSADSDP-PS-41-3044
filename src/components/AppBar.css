@@ -1,0 +1,13 @@
+.app-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+  }
+  
+  /* Add padding to body to prevent content from being hidden under the AppBar */
+  .body-padding {
+    padding-top: 64px; /* Adjust this value if AppBar height changes */
+  }
+  

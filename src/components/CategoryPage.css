@@ -1,0 +1,69 @@
+.category-page {
+    padding: 40px 20px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+  }
+  
+  .category-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+  
+  .causes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cause-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    transition: transform 0.2s;
+  }
+  
+  .cause-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cause-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .cause-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .cause-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .donate-button {
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: #125ca1;
+  }
+  

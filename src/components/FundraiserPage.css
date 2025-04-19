@@ -1,0 +1,531 @@
+/* Layout */
+.fundraiser-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #FAF9F6; /* Light beige */
+  position: relative;
+  padding-top: 80px; /* Adjust based on AppBar height */
+}
+
+.left-section {
+  width: 40%;
+  background-color: #F5F2EB; /* Soft beige */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.right-section {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Ensure the page content is not overlapped by the AppBar */
+.fundraiser-page {
+  position: relative;
+  padding-top: 80px; /* Adjust based on AppBar height */
+}
+
+/* Adjust Logo Position */
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Adjust Sign-in Button Position */
+.signin-container {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Left Section Content */
+.left-section h1 {
+  font-size: 2.5rem;
+  color: #1C1C1C;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left-section p {
+  font-size: 1.2rem;
+  color: #5E5E5E;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+
+.form-description {
+  font-size: 0.9rem;
+  color: #5E5E5E;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #D9482E;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Decreased Size of TextFields */
+.dropdown, .zip-input {
+  width: 100%;
+  padding: 8px; /* Decreased padding */
+  margin-top: 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 8px;
+  font-size: 0.9rem; /* Smaller font size */
+  background-color: #fff;
+}
+
+.zip-input::placeholder {
+  color: #A0A0A0;
+}
+
+.error {
+  border-color: #D9482E;
+}
+
+.error-text {
+  color: #D9482E;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.category-title {
+  font-size: 1.2rem;
+  color: #1C1C1C;
+  margin-top: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-button {
+  background: #fff;
+  border: 1px solid #D3D3D3;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-button:hover,
+.category-button.selected {
+  background-color: #ECECEC;
+}
+
+/* Continue Button */
+.continue-button {
+  background-color: #E0D8C8;
+  color: #A6A29E;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.continue-button:not(:disabled) {
+  background-color: #1C1C1C;
+  color: white;
+  cursor: pointer;
+}
+
+.continue-button:not(:disabled):hover {
+  background-color: #333;
+}
+/* Back Arrow Button */
+.back-arrow-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-arrow {
+  background-color: #1C1C1C;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.back-arrow:hover {
+  background-color: #333;
+}
+.options {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-button {
+  background: #fff;
+  border: 1px solid #D3D3D3;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width: 100%; /* Make buttons full-width */
+  max-width: 300px; /* Limit button width */
+}
+
+.option-button:hover,
+.option-button.selected {
+  background-color: #ECECEC;
+}
+/* Step Three - Goal Input */
+.step-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.step-three h2 {
+  font-size: 1.8rem;
+  color: #1C1C1C;
+  margin-bottom: 15px;
+}
+
+.goal-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.goal-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #1C1C1C;
+}
+
+.goal-input::placeholder {
+  color: #A0A0A0;
+}
+
+.continue-button {
+  background-color: #E0D8C8;
+  color: #A6A29E;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.continue-button:not(:disabled) {
+  background-color: #1C1C1C;
+  color: white;
+  cursor: pointer;
+}
+
+.continue-button:not(:disabled):hover {
+  background-color: #333;
+}
+
+.back-button {
+  background-color: transparent;
+  border: none;
+  color: #1C1C1C;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  color: #D9482E;
+}
+
+/* Buttons side by side (Continue & Back) */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.buttons-container button {
+  width: 48%;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 60px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-area:hover {
+  background-color: #f5f5f5;
+}
+
+.upload-input {
+  display: none; /* Hide the actual input */
+}
+
+.media-preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.media-item {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.media-preview-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.media-preview-video {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.upload-more-container {
+  margin-top: 15px;
+}
+
+.upload-more-button {
+  background-color: #f8f5f5;
+  color: rgb(12, 12, 12);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-more-button:hover {
+  background-color: #3be658;
+}
+.fundraiser-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-section {
+  width: 30%;
+}
+
+.right-section {
+  width: 65%;
+}
+
+h1, h2, h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.back-button, .continue-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button {
+  background-color: #ccc;
+}
+
+.continue-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.continue-button:disabled {
+  background-color: #c6c6c6;
+}
+
+/* Step 5 - Story Section */
+.step-five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-five h2 {
+  font-size: 2rem;
+}
+
+.step-five h3 {
+  font-size: 1.5rem;
+}
+
+.story-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.left-box {
+  width: 40%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-box {
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.font-customization {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-customization div {
+  margin-bottom: 10px;
+}
+
+.font-size-slider {
+  margin-right: 10px;
+}
+
+.font-style-button, .font-weight-button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+}
+
+.font-style-button:hover, .font-weight-button:hover {
+  background-color: #ddd;
+}
+
+.font-family-select {
+  padding: 5px 10px;
+  margin-top: 10px;
+}
